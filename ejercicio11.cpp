@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string>
+#include <iostream>
+#include <cassert>
 
 bool esPalindromo(int n) {
     bool palindromo = true;
@@ -9,7 +13,7 @@ bool esPalindromo(int n) {
             break;
         }
     }
-
+    return palindromo;
 }
 
 int main() {
@@ -40,8 +44,8 @@ int main() {
     }
 
     assert(esPalindromo(12344321) == true);
-    assert(esPalindromo(1245) == true);
-    assert(esPalindromo(8795978) == false);
+    assert(esPalindromo(1245) == false);
+    assert(esPalindromo(8795978) == true);
 
     return 0;
 }
